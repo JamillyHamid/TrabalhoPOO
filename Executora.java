@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class Executora {
     public static void exibirMenu1(){
-        System.out.println("|Menu|");
-        System.out.println("|1 - Cadastrar|");
-        System.out.println("|2 - Calcular IPVA|");
-        System.out.println("|3 - Sair|");
+        System.out.println("|         Menu         |");
+        System.out.println("|1 - Cadastrar         |");
+        System.out.println("|2 - Calcular IPVA     |");
+        System.out.println("|3 - Sair              |");
     }
 
     public static void exibirMenu2(){
-        System.out.println("|Menu|");
-        System.out.println("|1 - Caminhão|");
-        System.out.println("|2 - Carro |");
-        System.out.println("|3 - Ônibus|");
+        System.out.println("|      Menu      |");
+        System.out.println("|1 - Caminhão    |");
+        System.out.println("|2 - Carro       |");
+        System.out.println("|3 - Ônibus      |");
     }
 
     public static void main(String[] args) {
