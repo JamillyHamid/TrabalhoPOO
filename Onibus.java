@@ -1,29 +1,19 @@
-package Avaliativas;
+package OrientaçaoOjetos;
 
-public class Onibus extends Veiculo{
-    private int assentos;
-
-    public Onibus() {
+public class Onibus extends  Veiculo{
+    public Onibus(String modelo, String marca, String cor, String placa,int ano, String tanqueCombustivel, double velocidade) {
+        super(modelo, marca, cor, placa,ano, tanqueCombustivel, velocidade);
     }
 
-    public Onibus(String placa, String cor, String marca, String modelo, int ano, float preco) {
-        super(placa, cor, marca, modelo, ano, preco);
+    @Override
+    public void ligar(){
+        System.out.println("ônibus ligado.");
     }
-
-
-    public int getAssentos() {
-        return assentos;
+    public void desligar(){
+        System.out.println("ônibus desligado.");
     }
-
-    public void setAssentos(int assentos) {
-        this.assentos = assentos;
+    public void anunciarParagem(){
+        System.out.println("Próxima paragem:...");
     }
-
-    public float calcularIPVA (float preco){
-        float IPVA;
-        IPVA = preco*2/100;
-        return IPVA;
-    }
-
 
 }

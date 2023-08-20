@@ -1,27 +1,21 @@
-package Avaliativas;
+package OrientaçaoOjetos;
 
-public class Caminhao extends Veiculo{
-    private int eixos;
-
-    public Caminhao() {
+public class Caminhao extends Veiculo {
+    public Caminhao(String modelo, String marca, String cor, String placa, int ano, String tanqueCombustivel, double velocidade) {
+        super(modelo, marca, cor, placa, ano, tanqueCombustivel, velocidade);
     }
 
-    public Caminhao(String placa, String cor, String marca, String modelo, int ano, float preco) {
-        super(placa, cor, marca, modelo, ano, preco);
+    @Override
+    public void ligar(){
+        System.out.println("Caminhão ligado.");
     }
-
-    public int getEixos() {
-        return eixos;
+    public void desligar(){
+        System.out.println("Caminhão desligado.");
     }
-
-    public void setEixos(int eixos) {
-        this.eixos = eixos;
+    public void carregarCarga(){
+        System.out.println("Caminhão carregando.");
     }
-
-    public float calcularIPVA (float preco){
-        float IPVA;
-        IPVA = preco*3/100;
-        return IPVA;
+    public void descarregarCarga(){
+        System.out.println("Caminhão Descarregando");
     }
-
 }
