@@ -2,8 +2,7 @@
 
 ```
 Trabalho realizado pelos alunos:
-- Lucas Waidman de Oliveira
-- Rafaela Cunha
 - Jamilly Hamid
-
+- Lucas Waidman de Oliveir
+- Rafaela Cunha
 ```
