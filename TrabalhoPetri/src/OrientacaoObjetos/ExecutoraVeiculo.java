@@ -22,6 +22,7 @@ public class ExecutoraVeiculo {
             System.out.println("| 3 - Abrir as portas do carro. |");
             System.out.println("| 4 - Ligar o Ônibus.            |");
             System.out.println("| 5 - Anunciar Paragem do Ônibus.|");
+            System.out.println("| 6 - Ver listagem de veículos.|");
             System.out.println("| 0 - Sair.                      |");
             System.out.println("|---------------------------------------------------|");
             System.out.print("Digite uma opção válida: ");
@@ -36,12 +37,15 @@ public class ExecutoraVeiculo {
                     switch (tipoVeiculo) {
                         case 1:
                             veiculoCriado = cadastro.criarCarro();
+                            carro1 = (Carro) veiculoCriado;
                             break;
                         case 2:
                             veiculoCriado = cadastro.criarOnibus();
+                            onibus1 = (Onibus) veiculoCriado;
                             break;
                         case 3:
                             veiculoCriado = cadastro.criarCaminhao();
+                            caminhao1 = (Caminhao) veiculoCriado;
                             break;
                         default:
                             System.out.println("Tipo de veículo inválido.");
@@ -68,10 +72,29 @@ public class ExecutoraVeiculo {
                     onibus1.anunciarParagem();
                     break;
 
+                case 6:
+                    System.out.print("Digite o número do veículo (1 - Carro, 2 - Ônibus, 3 - Caminhão): ");
+                    int numeroVeiculo = scanner.nextInt();
+                    scanner.nextLine();
+
+                    switch (numeroVeiculo) {
+                        case 1:
+                            cadastro.exibirDetalhes(carro1);
+                            break;
+                        case 2:
+                            cadastro.exibirDetalhes(onibus1);
+                            break;
+                        case 3:
+                            cadastro.exibirDetalhes(caminhao1);
+                            break;
+                        default:
+                            System.out.println("Número de veículo inválido.");
+                            break;
+                    }
+
                 case 0:
                     System.out.println("Saindo do programa.");
                     return;
-
                 default:
                     System.out.println("Opção inválida. Digite uma opção válida.");
                     break;

@@ -16,10 +16,8 @@ public class CadastroVeiculos {
         String placa = scanner.nextLine();
         System.out.print("Informe o ano do carro: ");
         int ano = scanner.nextInt();
-
         System.out.print("Informe o tipo de combustível do carro: ");
         String tanqueCombustivel = scanner.nextLine();
-
         System.out.print("Informe a velocidade máxima do carro: ");
         double velocidade = scanner.nextDouble();
 
@@ -62,6 +60,17 @@ public class CadastroVeiculos {
         double velocidade = scanner.nextDouble();
 
         return new Caminhao(modelo, marca, cor, placa, ano, tanqueCombustivel, velocidade);
+    }
+
+    public void exibirDetalhes(Veiculo veiculo) {
+        System.out.println("Detalhes do Veículo:");
+        System.out.println("Modelo: " + veiculo.getModelo());
+        System.out.println("Marca: " + veiculo.getMarca());
+        System.out.println("Cor: " + veiculo.getCor());
+        System.out.println("Placa: " + veiculo.getPlaca());
+        System.out.println("Ano: " + veiculo.getAno());
+        System.out.println("Tanque de Combustivel: " + veiculo.getTanqueCombustivel());
+        System.out.println("Velocidade: " + veiculo.getVelocidade());
     }
 }
 
