@@ -15,16 +15,17 @@ public class ExecutoraVeiculo {
         Veiculo veiculoCriado = null;
 
         while (true) {
-            System.out.println("-----------------------MENU-------------------------");
+            System.out.println(" -------------------------------------------------- ");
+            System.out.println("|                       MENU                        |");
             System.out.println("|---------------------------------------------------|");
-            System.out.println("| 1 - Criar objeto.             |");
-            System.out.println("| 2 - Ligar o Carro.            |");
-            System.out.println("| 3 - Abrir as portas do carro. |");
-            System.out.println("| 4 - Ligar o Ônibus.            |");
-            System.out.println("| 5 - Anunciar Paragem do Ônibus.|");
-            System.out.println("| 6 - Ver listagem de veículos.|");
-            System.out.println("| 0 - Sair.                      |");
-            System.out.println("|---------------------------------------------------|");
+            System.out.println("| 1 - Criar objeto.                                 |");
+            System.out.println("| 2 - Ligar o Carro.                                |");
+            System.out.println("| 3 - Abrir as portas do carro.                     |");
+            System.out.println("| 4 - Ligar o Ônibus.                               |");
+            System.out.println("| 5 - Anunciar Paragem do Ônibus.                   |");
+            System.out.println("| 6 - Ver listagem de veículos.                     |");
+            System.out.println("| 0 - Sair.                                         |");
+            System.out.println(" --------------------------------------------------- ");
             System.out.print("Digite uma opção válida: ");
             opcao = scanner.nextInt();
 
